@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Brand Global Styles ===== */
+
+/* Font & smoothing */
+html, body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+
+  /* Brand colors */
+  background-color: #FFF9F7; /* soft cream base */
+  color: #7B4B3A; /* elegant brown text */
+}
+
+/* Accent links or highlights */
+a {
+  color: #7B4B3A;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #F8D8D0;
+}
+
+/* Container defaults */
+.container {
+  @apply max-w-4xl mx-auto px-4;
+}
+
+/* Reusable card style */
+.card {
+  @apply shadow-md rounded-2xl p-4;
+  background-color: #F8D8D0; /* soft pink accent background */
+  color: #7B4B3A;
+}
+
+/* Bottom navigation fix */
+.mobile-nav {
+  @apply fixed bottom-0 left-0 w-full flex justify-around items-center border-t py-2;
+  background-color: #FFF9F7;
+  border-color: #F8D8D0;
+  color: #7B4B3A;
+  z-index: 50;
+}
+
+/* Transition helpers */
+.fade-in {
+  @apply transition-opacity duration-500 ease-in-out;
+}
