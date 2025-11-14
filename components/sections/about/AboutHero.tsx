@@ -5,7 +5,7 @@ export default function AboutHero() {
   return (
     <section className="relative h-[70vh] flex items-center justify-center text-center overflow-hidden">
       <img
-        src="/images/about-hero.jpg"
+        src="/Beige Aesthetic Handmade Accessories Etsy Shop Cover_20251112_144939_0000.png"
         alt="Sewing fabric background"
         className="absolute inset-0 w-full h-full object-cover brightness-75"
       />

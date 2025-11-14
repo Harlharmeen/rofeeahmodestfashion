@@ -5,9 +5,31 @@ import Footer from "@/components/layout/Footer";
 
 export const metadata = {
   title: "Rofee'ah Modest Fashion",
-  description:
-    "Elegant modest fashion for the modern woman — hijabs, khimars, couture & jewelry collections.",
+  description: "Modest Fashion for the Elegant Woman — Khimars, Jilbabs, Abayas, Native Wear, Online Courses & More.",
+  keywords: ["modest fashion", "hijab", "jilbab", "abayas", "muslimah fashion"],
+  openGraph: {
+    title: "Rofee'ah Modest Fashion",
+    description: "Modesty styled as lifestyle — explore elegant modest fashion collections.",
+    url: "https://rofeeahmodestfashion.vercel.app/",
+    siteName: "Rofee'ah Modest Fashion",
+    images: [
+      {
+        url: "https://rofeeahmodestfashion.vercel.app/og-image.jpg", // <-- upload this
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rofee'ah Modest Fashion",
+    description: "Modesty styled as lifestyle.",
+    images: ["https://rofeeahmodestfashion.vercel.app/og-image.jpg"],
+  },
 };
+
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
