@@ -26,10 +26,10 @@ export default function AboutHero() {
         </p>
         <div className="flex justify-center gap-4">
           <button className="bg-[#D4A5A5] hover:bg-[#c78c8c] text-white px-5 py-2 rounded-md font-medium">
-            Shop Now
+            <a href="/shop">Shop Now</a>
           </button>
           <button className="border border-white hover:bg-white hover:text-[#6B4226] px-5 py-2 rounded-md font-medium">
-            Meet the Designer
+            <a href="#Meet-Designer">Meet Lead Designer</a>
           </button>
         </div>
       </motion.div>

@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Rofee’ah Modest Fashion</h3>
           <p className="text-sm leading-relaxed">
-            Elevating modesty with elegance — hijabs, couture, and accessories
+            Elevating modesty with elegance — Hijabs, Abaya, Cooperate modest outfits, Couture, and Acessories
             crafted for confidence and grace.
           </p>
         </div>
@@ -37,7 +37,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center py-3 border-t border-brand-highlight text-xs">
-        © {new Date().getFullYear()} Rofee’ah Modest Fashion. All rights reserved <br /> [Developed by:  Al-ameen Aderibigbe].
+        © {new Date().getFullYear()} Rofee’ah Modest Fashion. All rights reserved <br /> [Developed by:  <a href="https://wa.me/2347080482661" className="hover:underline">Al-ameen Aderibigbe</a>].
       </div>
     </footer>
   );

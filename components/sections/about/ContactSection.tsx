@@ -32,10 +32,10 @@ export default function ContactSection() {
 
         {/* Right - Contact Info */}
         <div className="space-y-4 text-[#6B4226]/80">
-          <p><strong>📞 WhatsApp:</strong> <a href="https://wa.me/2349033957023" className="hover:underline">+2349033957023</a></p>
-          <p><strong>📧 Email:</strong> hamzatadejoke2001@.com</p>
-          <p><strong>📍 Location:</strong> Ibadan, Nigeria (Worldwide Delivery)</p>
-          <p><strong>🌐 Socials:</strong> Instagram | TikTok | YouTube | Facebook</p>
+          <p><strong>📞 WhatsApp:</strong> <a href="https://wa.me/2349033957025" className="hover:underline">+2349033957025</a></p>
+          <p><strong>📧 Email:</strong> <a href="mailto:hamzatadejoke2001@.com" className="hover:underline">hamzatadejoke2001@.com</a> </p>
+          <p><strong>📍 Location:</strong> <a href="https://maps.app.goo.gl/AhHyFcSJxLncvBKS6" className="hover:underline">Ibadan, Nigeria (Worldwide Delivery)</a> </p>
+          <p><strong>🌐 Socials:</strong> <a href="https://www.instagram.com/rofeeah_modest_fashion_" className="hover:underline">Instagram</a> | <a href="tiktok.com/@Rofeeahmodestfashion" className="hover:underline">TikTok</a> | <a href="https://m.youtube.com/@rofeeahmodestfashion" className="hover:underline">YouTube</a> | <a href="https://www.facebook.com/share/1BiDFJffLX/?mibextid=wwXlfr" className="hover:underline">Facebook</a></p>
         </div>
       </div>
     </section>
