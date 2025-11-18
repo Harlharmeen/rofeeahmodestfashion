@@ -13,8 +13,8 @@ export default function HomePage() {
       <SignatureStyles />
       <NativeOwambe />
       <Accessories />
-      <CustomerShoutout />
       <LearnWithUs />
+      <CustomerShoutout />
       <NewsletterCTA />
     </div>
   );
