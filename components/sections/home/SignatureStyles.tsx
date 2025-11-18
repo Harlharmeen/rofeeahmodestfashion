@@ -4,11 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 const styles = [
-  { name: "Egyptian Khimar", image: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1762847864/jilbab-makkah-1-piece-manches-mitaines_n16mo2.webp" },
-  { name: "Umbrella Jilbab", image: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1762847863/f3b8e5833c51fa33401dbf537584db1e_b7aenv.jpg" },
-  { name: "Half Khimar", image: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1762847857/ee097ce422a36b324670bbddd1d05d14_fibqnc.jpg" },
-  { name: "V-Shaped Hijabs", image: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1762847856/d7d758b59f720d046430700b245664d2_ik3nt7.jpg" },
-  { name: "Spiral Hijabs", image: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1762847856/0eff5be9125a832633622620ecd0b3e6_bla4py.jpg" },
+  { name: "Egyptian Khimar", image: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1763469908/deff1549-5af0-4054-98d0-410a36a32131_nxr5b7_2bb547_655840.jpg" },
+  { name: "Hijabs", image: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1763470274/8b667175-10e0-4ae5-bd05-bd0eab4d6f6e_iayxev_99a05b.jpg" },
+  { name: "Abayas", image: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1763486374/f9079bc2-a162-4fc1-af0c-cf5f8a298d23_rmarfh_724cd4.jpg" },
+  { name: "Corparate Wears", image: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1763486911/IMG_4622_f4blma_9374e1.jpg" },
+  { name: "Umbrella Jilbab", image: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1763488475/f3b8e5833c51fa33401dbf537584db1e_b7aenv_794346.jpg" },
+  { name: "Half Khimar", image: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1763488077/ee097ce422a36b324670bbddd1d05d14_fibqnc_39c852.jpg" },
+
+  
 ];
 
 const SignatureStyles = () => {
@@ -17,7 +20,7 @@ const SignatureStyles = () => {
       <div className="max-w-7xl mx-auto text-center">
         {/* Section Header */}
         <h2 className="text-3xl md:text-4xl font-semibold text-brand-text mb-10">
-          Signature Styles
+          Muslimah Signature Styles
         </h2>
 
         {/* Grid Layout */}
@@ -25,7 +28,7 @@ const SignatureStyles = () => {
           {styles.map((style) => (
             <div
               key={style.name}
-              className="relative group h-64 rounded-2xl overflow-hidden shadow-sm"
+              className="relative group h-100 rounded-2xl overflow-hidden shadow-sm"
             >
               <Image
                 src={style.image}
