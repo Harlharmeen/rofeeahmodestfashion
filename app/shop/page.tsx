@@ -34,6 +34,6 @@ const mappedProducts = filteredProducts.map((p) => ({
 image: p.images?.[0] || "", // use first image
 }));
 
-return ( <main className="bg-[#F7EDE7] min-h-screen"> <ShopHero filters={filters} setFilters={setFilters} /> <section className="px-4 md:px-10 py-10"> <ProductGrid products={mappedProducts} /> </section> <ShopCTA /> </main>
+return ( <main className="bg-[#F7EDE2] min-h-screen"> <ShopHero filters={filters} setFilters={setFilters} /> <section className="px-4 md:px-10 py-10"> <ProductGrid products={mappedProducts} /> </section> <ShopCTA /> </main>
 );
 }
