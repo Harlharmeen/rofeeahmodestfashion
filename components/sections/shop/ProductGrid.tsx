@@ -3,6 +3,7 @@
 import ProductCard from "@/components/cards/ProductCard";
 
 interface Product {
+  id: string;
   image: string;
   name: string;
   price: number;
@@ -27,7 +28,8 @@ const ProductGrid = ({ products }: ProductGridProps) => {
       {products.map((product, index) => (
         <ProductCard
           key={index}
-          image={product.image}
+          id={product.id}
+          image={product.images[0]}
           name={product.name}
           price={product.price.toString()}
           category={product.category}

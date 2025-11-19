@@ -18,6 +18,7 @@ const Footer = () => {
           <h4 className="font-semibold mb-3 text-brand-highlight">Quick Links</h4>
           <ul className="space-y-2 text-sm">
             <li><Link href="/shop" className="hover:text-brand-highlight">Shop</Link></li>
+            <li><Link href="/cart" className="hover:text-brand-highlight">Cart</Link></li>
             <li><Link href="/courses" className="hover:text-brand-highlight">Courses</Link></li>
             <li><Link href="/shoutout" className="hover:text-brand-highlight">Shout-Out</Link></li>
             <li><Link href="/about" className="hover:text-brand-highlight">About</Link></li>
