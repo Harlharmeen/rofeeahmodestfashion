@@ -15,7 +15,7 @@ const ShopCTA = () => {
 
       <div className="flex justify-center gap-4 mb-8">
         <a
-          href="https://wa.me/+2349033957025"
+          href="https://wa.me/+2349033957023"
           className="bg-[#D4A5A5] text-white font-medium px-6 py-3 rounded-xl hover:bg-[#6B4226] transition"
         >
           Book a Custom Sewing
