@@ -13,6 +13,8 @@ const FilterSidebar = () => {
     "Jewelry & Accessories",
     "Owambe / Native Wears",
     "Couture Collection",
+    "Abayas",
+
   ];
 
   return (

@@ -3,11 +3,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const shoutouts = [
-  { name: "Zainab", img: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1762856160/IMG-20251111-WA0000_fwpyqi.jpg" },
-  { name: "Maryam", img: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1762856160/IMG-20251111-WA0000_fwpyqi.jpg" },
-  { name: "Hafsa", img: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1762856160/IMG-20251111-WA0000_fwpyqi.jpg" },
-  { name: "Fatima", img: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1762856160/IMG-20251111-WA0000_fwpyqi.jpg" },
-  { name: "Fatima", img: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1762856160/IMG-20251111-WA0000_fwpyqi.jpg" },
+  { name: "Waliyah", img: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1763466618/WhatsApp_Image_2025-11-16_at_20.40.48_mk6eis_880b52.jpg" },
+  { name: "Customer A", img: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1764087217/IMG_4622_f4blma_9374e1_3aefde.jpg" },
+  { name: "Customer B", img: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1764087459/IMG_4625_ismy5r_ccffdf.jpg" },
+  { name: "Customer C", img: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1764087655/IMG_4624_bhtgjb_26c507.jpg" },
+  { name: "Customer D", img: "https://res.cloudinary.com/dfqh2niw3/image/upload/v1764087833/IMG_4604_l05pb2_8fa2ab.jpg" },
   
   ];
 

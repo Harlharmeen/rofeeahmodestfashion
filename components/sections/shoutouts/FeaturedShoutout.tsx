@@ -20,10 +20,10 @@ export default function FeaturedShoutout() {
           alt="Featured customer"
           width={800}
           height={500}
-          className="w-full object-cover h-80"
+          className="w- object-cover h-100"
         />
         <div className="p-6 bg-transparent ">
-          <h3 className="text-xl font-bold text-[#6B4226] mb-2">Aisha Bello</h3>
+          <h3 className="text-xl font-bold text-[#6B4226] mb-2">Hamzat Rofiat</h3>
           <p className="text-[#6B4226]/80">
             “Wearing pieces from this brand makes me feel elegant yet comfortable — I get compliments every time.”
           </p>
