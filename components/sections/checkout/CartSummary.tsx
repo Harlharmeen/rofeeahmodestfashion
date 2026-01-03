@@ -42,7 +42,13 @@ export default function CartSummary({ cart, updateCart }: CartSummaryProps) {
           {cart.map((item) => (
             <div key={item.id} className="flex gap-4 p-4 bg-white rounded-xl shadow-sm">
               <div className="relative w-24 h-24 rounded-lg overflow-hidden">
-                <Image src={item.image} alt={item.name} fill className="object-cover" />
+                <Image
+  src={item.images?.[0]}
+  alt={item.name}
+  fill
+  className="object-cover"
+/>
+
               </div>
               <div className="flex-1 flex flex-col justify-between">
                 <div>

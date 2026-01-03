@@ -2,7 +2,7 @@ const sampleProducts = [
   {
     id: "1",
     name: "Egyptian Khimar",
-    price: 15000,
+    price: 18000,
     category: "Hijabs",
     description: "Elegant Egyptian Khimar made with premium fabric. Comfortable and stylish for daily wear or special occasions.",
     images: [
@@ -49,7 +49,7 @@ const sampleProducts = [
   },
   {
     id: "5",
-    name: "Silk Pleated Scarf",
+    name: "Wrap Hijab",
     price: 8000,
     category: "Accessories",
     description: "Soft silk pleated scarf that complements any outfit elegantly.",
@@ -61,8 +61,8 @@ const sampleProducts = [
   },
   {
     id: "6",
-    name: "Gold Bracelet",
-    price: 5000,
+    name: "Cartier Bracelet(Gold)",
+    price: 10000,
     category: "Jewelry",
     description: "Luxurious hand bracelet",
     images: [
@@ -73,8 +73,8 @@ const sampleProducts = [
   },
   {
     id: "7",
-    name: "Silver Bracelet",
-    price: 5000,
+    name: "Cartier Bracelet(Silver)",
+    price: 10000,
     category: "Jewelry",
     description: "Luxurious hand bracelet",
     images: [
@@ -85,8 +85,8 @@ const sampleProducts = [
   },
   {
     id: "8",
-    name: "Scarf Clips",
-    price: 1200,
+    name: "Scarf/Hijab Ring",
+    price: 1500,
     category: "Jewelry",
     description: "Durable Accessory Clip",
     images: [
@@ -97,8 +97,8 @@ const sampleProducts = [
   },
   {
     id: "9",
-    name: "Earring",
-    price: 35000,
+    name: "VCA Earring",
+    price: 2000,
     category: "Jewelry",
     description: "Ear-fit for Queens",
     images: [
@@ -134,7 +134,7 @@ const sampleProducts = [
   {
     id: "12",
     name: "Love Necklace",
-    price: 10000,
+    price: 5000,
     category: "Jewelry",
     description: "Necklace",
     images: [
@@ -145,10 +145,10 @@ const sampleProducts = [
   },
   {
     id: "13",
-    name: "Pink Wristwatch",
+    name: "Pink Wristwatch/Bead set",
     price: 15000,
     category: "Jewelry",
-    description: "Premium  Wristwatch.",
+    description: "Wristwatch.",
     images: [
       "https://res.cloudinary.com/dfqh2niw3/image/upload/v1763381994/IMG_4600_kgtq9m.jpg",
       "https://res.cloudinary.com/dfqh2niw3/image/upload/v1763381994/IMG_4600_kgtq9m.jpg",
@@ -193,8 +193,8 @@ const sampleProducts = [
   },
   {
     id: "23",
-    name: "Native Gown",
-    price: 20000,
+    name: "Abaya & Hijab",
+    price: 26000,
     category: "Abaya",
     description: "Exquisite Owambe couture gown for weddings and traditional events.",
     images: [
@@ -205,8 +205,8 @@ const sampleProducts = [
   },
   {
     id: "24",
-    name: "Native Gown",
-    price: 20000,
+    name: "Bow Abaya & Hijab",
+    price: 25000,
     category: "Abaya",
     description: "Exquisite Owambe couture gown for weddings and traditional events.",
     images: [
@@ -217,8 +217,8 @@ const sampleProducts = [
   },
   {
     id: "25",
-    name: "Native Gown",
-    price: 20000,
+    name: "Color Combo Abaya & Hijab",
+    price: 22000,
     category: "Abaya",
     description: "Exquisite Owambe couture gown for weddings and traditional events.",
     images: [
@@ -229,8 +229,8 @@ const sampleProducts = [
   },
   {
     id: "15",
-    name: "Hijab",
-    price: 8000,
+    name: "Fashion Hijab wit Trimmings",
+    price: 8500,
     category: "Accessories",
     description: "Soft silk pleated scarf that complements any outfit elegantly.",
     images: [
@@ -241,8 +241,8 @@ const sampleProducts = [
   },
   {
     id: "26",
-    name: "Hijab",
-    price: 8000,
+    name: "Pleated Hijab",
+    price: 7000,
     category: "Accessories",
     description: "Soft silk pleated scarf that complements any outfit elegantly.",
     images: [
@@ -253,7 +253,7 @@ const sampleProducts = [
   },
   {
     id: "27",
-    name: "Hijab",
+    name: "Two Step Pleated Hijab",
     price: 8000,
     category: "Accessories",
     description: "Soft silk pleated scarf that complements any outfit elegantly.",
@@ -267,8 +267,8 @@ const sampleProducts = [
  
   {
     id: "18",
-    name: "Trouser",
-    price: 9000,
+    name: "Trouser & Scarf",
+    price: 14000,
     category: "Corprate Wear",
     description: "Premium gold-plated ring, perfect as a gift or a personal statement piece.",
     images: [
@@ -279,8 +279,8 @@ const sampleProducts = [
   },
   {
     id: "19",
-    name: "Suit",
-    price: 35000,
+    name: "Black Suit, Skirt, Hijab &b Shirt",
+    price: 50000,
     category: "Corprate Wear",
     description: "Exquisite Owambe couture gown for weddings and traditional events.",
     images: [

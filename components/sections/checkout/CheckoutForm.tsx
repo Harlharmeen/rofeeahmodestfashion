@@ -8,40 +8,75 @@ interface CheckoutFormProps {
   router: any;
 }
 
-export default function CheckoutForm({ cart, clearCart, router }: CheckoutFormProps) {
+export default function CheckoutForm({
+  cart,
+  clearCart,
+  router,
+}: CheckoutFormProps) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+  const total = cart.reduce(
+    (sum, item) => sum + item.price * item.qty,
+    0
+  );
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!cart.length) return;
 
     setLoading(true);
 
-    const order = {
-      name,
-      email,
-      address,
-      items: cart,
-      total,
-    };
+    try {
+      const res = await fetch("http://localhost:5000/api/orders", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          address,
+          items: cart.map((item) => ({
+            name: item.name,
+            price: item.price,
+            qty: item.qty,
+          })),
+          total,
+        }),
+      });
 
-    console.log("Order submitted:", order);
+      const data = await res.json();
 
-    // Reset cart
-    clearCart();
-    setLoading(false);
-    alert("Order placed successfully! (Simulated)");
-    router.push("/");
+      if (!data.success) {
+        alert("Failed to create order");
+        return;
+      }
+
+      clearCart();
+
+      // ✅ Redirect using backend-generated orderId
+      router.push(`/order/${data.orderId}`);
+    } catch (error) {
+      console.error("Checkout error:", error);
+      alert("Something went wrong");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 bg-white p-6 rounded-xl shadow-sm">
-      <h2 className="text-xl font-semibold text-[#6B4226] mb-2">Checkout Details</h2>
+    <form
+      onSubmit={handleSubmit}
+      className="space-y-4 bg-white p-6 rounded-xl shadow-sm"
+    >
+      <h2 className="text-xl font-semibold text-[#6B4226] mb-2">
+        Checkout Details
+      </h2>
 
       <div className="flex flex-col">
         <label className="mb-1 text-sm">Full Name</label>
@@ -66,6 +101,17 @@ export default function CheckoutForm({ cart, clearCart, router }: CheckoutFormPr
       </div>
 
       <div className="flex flex-col">
+        <label className="mb-1 text-sm">Phone / WhatsApp Number</label>
+        <input
+          type="tel"
+          className="border px-3 py-2 rounded-lg"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+          required
+        />
+      </div>
+
+      <div className="flex flex-col">
         <label className="mb-1 text-sm">Shipping Address</label>
         <textarea
           className="border px-3 py-2 rounded-lg"
@@ -85,7 +131,7 @@ export default function CheckoutForm({ cart, clearCart, router }: CheckoutFormPr
         disabled={loading || !cart.length}
         className="w-full bg-[#6B4226] text-white py-3 rounded-lg hover:bg-[#57351F] transition disabled:opacity-50"
       >
-        {loading ? "Processing..." : "Place Order"}
+        {loading ? "Processing..." : "Proceed to Payment"}
       </button>
     </form>
   );
