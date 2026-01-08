@@ -27,12 +27,13 @@ export default function PaymentProofPage() {
       formData.append("proof", file); // ✅ Must match backend field
 
       const res = await fetch(
-        `http://localhost:5000/api/payment-proof/${orderId}`,
-        {
-          method: "POST",
-          body: formData, // ❌ DO NOT set headers for FormData
-        }
-      );
+  `${process.env.NEXT_PUBLIC_API_URL}/api/payment-proof/${orderId}`,
+  {
+    method: "POST",
+    body: formData, // ❌ keep as is for FormData
+  }
+);
+
 
       if (!res.ok) {
         const err = await res.json();

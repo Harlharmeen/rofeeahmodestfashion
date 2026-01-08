@@ -31,24 +31,25 @@ export default function CheckoutForm({
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/api/orders", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          phone,
-          address,
-          items: cart.map((item) => ({
-            name: item.name,
-            price: item.price,
-            qty: item.qty,
-          })),
-          total,
-        }),
-      });
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/orders`, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    name,
+    email,
+    phone,
+    address,
+    items: cart.map((item) => ({
+      name: item.name,
+      price: item.price,
+      qty: item.qty,
+    })),
+    total,
+  }),
+});
+
 
       const data = await res.json();
 
